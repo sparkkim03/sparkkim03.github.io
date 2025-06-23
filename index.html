@@ -3,56 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Test Site</title>
+    <title>Stefano Park Kim - Personal Page</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Custom font for Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
+            font-family: 'Inter', sans-serif;
         }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 90%;
-        }
-        h1 {
-            color: #007bff;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-        .success-message {
-            color: #28a745;
-            font-weight: bold;
-            margin-top: 30px;
-            font-size: 1.2em;
-        }
-        .footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #777;
+        /* Custom color for the light yellow background */
+        .bg-custom-yellow {
+            background-color: #FFFACD; /* A light yellow shade */
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Welcome to My GitHub Pages Site!</h1>
-        <p>This is a simple test page to confirm that your GitHub Pages setup is working as expected.</p>
-        <p class="success-message">If you can see this page, congratulations! Your site is live!</p>
-        <div class="footer">
-            <p>Hosted freely by GitHub Pages.</p>
-        </div>
+<body class="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-2 sm:p-4">
+    <!--
+        Main Page Content Wrapper:
+        - Increased max-width to lg:max-w-7xl to make it wider on larger screens.
+        - Uses w-full to take full width on smaller screens.
+        - min-h-[calc(100vh-1rem)] (adjusted for body padding) makes it fill vertical space.
+        - Added a responsive padding (p-4 sm:p-6) inside for content spacing.
+    -->
+    <div class="w-full max-w-full lg:max-w-7xl bg-custom-yellow rounded-lg shadow-xl overflow-hidden min-h-[calc(100vh-1rem)] sm:min-h-[calc(100vh-2rem)]">
+
+        <!-- Navigation Bar -->
+        <nav class="w-full py-4 px-6 sm:px-8">
+            <ul class="flex justify-center space-x-6 text-lg font-medium">
+                <li>
+                    <!-- About Me is now the active page, indicated by an underline -->
+                    <a href="#" class="text-gray-700 underline underline-offset-4 rounded-md p-2">
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:underline hover:underline-offset-4 rounded-md p-2">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:underline hover:underline-offset-4 rounded-md p-2">
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Separator Line -->
+        <hr class="border-t border-gray-300 w-full">
+
+        <!-- Main Content Area -->
+        <main class="p-8 sm:p-12 flex items-center justify-center flex-grow">
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
+                <!-- Text Content -->
+                <div class="text-left md:w-3/5 mb-8 md:mb-0 md:mr-8">
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-800 leading-tight mb-4">Stefano Park Kim</h1>
+                    <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Quisque ipsum suspendisse ultrices gravida. Risus
+                        commodo viverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                </div>
+
+                <!-- Profile Photo Placeholder -->
+                <div class="md:w-2/5 flex justify-center md:justify-end">
+                    <img
+                        src="https://placehold.co/200x200/000000/FFFFFF?text=Profile"
+                        alt="Profile Photo Placeholder"
+                        class="w-48 h-48 rounded-full shadow-lg border-4 border-white object-cover"
+                        onerror="this.onerror=null;this.src='https://placehold.co/200x200/CCCCCC/000000?text=Error';"
+                    >
+                </div>
+            </div>
+        </main>
     </div>
+
 </body>
 </html>
