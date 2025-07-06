@@ -3,3 +3,6 @@ languageCode='en-us'
 theme='nostyleplease'
 title='Stefano Park Kim'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
