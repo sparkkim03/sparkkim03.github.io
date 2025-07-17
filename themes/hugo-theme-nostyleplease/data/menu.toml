@@ -2,11 +2,15 @@
 title = "info"
 
   [[entries.entries]]
-  title = "a (nearly) no-CSS, fast, minimalist Hugo theme ported from <a href='https://github.com/riggraz/no-style-please'>riggraz/no-style-please</a>."
+  title = "sparkkim0801@gmail.com"
 
   [[entries.entries]]
-  title = "github repo"
-  url = "https://github.com/hanwenguo/hugo-theme-nostyleplease"
+  title = "linkedin"
+  url = "https://www.linkedin.com/in/stefano-park-kim/"
+
+  [[entries.entries]]
+  title = "github"
+  url = "https://github.com/sparkkim03"
 
 
 [[entries]]
@@ -31,21 +35,4 @@ title = "posts by category"
 title = "rss"
 url = "index.xml"
 
-[[entries]]
-title = "another list"
 
-  [[entries.entries]]
-  title = "with subitems"
-
-    [[entries.entries.entries]]
-    title = "with subsubitems"
-
-    [[entries.entries.entries]]
-    title = "example page"
-    url = "about"
-
-[[entries]]
-title = "PRO TIP"
-entries = [
-   { title = "to edit this menu, edit data/menu.toml file" }
-  ]
