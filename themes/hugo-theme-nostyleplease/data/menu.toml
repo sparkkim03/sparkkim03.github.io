@@ -1,5 +1,5 @@
 [[entries]]
-title = "info"
+title = "contact"
 
   [[entries.entries]]
   title = "sparkkim0801@gmail.com"
@@ -12,6 +12,9 @@ title = "info"
   title = "github"
   url = "https://github.com/sparkkim03"
 
+  [[entries.entries]]
+  title = "resume"
+  url = "/resume/stefanoresume.pdf"
 
 [[entries]]
 title = "all posts"
